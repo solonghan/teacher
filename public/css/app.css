@@ -1,0 +1,9 @@
+body {
+  color: #fcc;
+  font-size: 14px;
+}
+@media screen and (max-width: 787px) {
+  body {
+    color: #FFF;
+  }
+}

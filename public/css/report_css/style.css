@@ -1,0 +1,149 @@
+:root {
+    --bs-primary-rgb:0,149,130;
+}
+header .logo{
+    width: 145px;
+}
+footer .logo{
+    width: 60px;
+}
+.report-title{
+    font-size: 20px;
+    border-left: 8px solid rgb(0,149,130);
+    padding-left: 8px;
+    margin: 20px 0;
+}
+.check-item.beefup {
+    border: none!important;
+    border-radius: 0;
+    margin: .7em 0;
+}
+.check-item .beefup__body {
+    padding:10px 5px;
+}
+.check-item .beefup__head > button{
+    border: 1px solid rgb(0,149,130)!important;
+    color: rgb(0,149,130);
+    border-radius: 5px;
+    font-size: 16px;
+}
+.check-item.is-open .beefup__head > button,
+.check-item.is-open .check-item.is-open .beefup__head > button{
+    background-color: rgb(0,149,130)!important;
+    color: white!important;
+}
+.check-item.is-open .check-item .beefup__head > button{
+    background-color: transparent!important;
+    color: rgb(0,149,130)!important;
+}
+.check-item .beefup__body{
+    font-size: 14px;
+}
+.check-item .beefup__body h5{
+    background-color: rgb(0,149,130);
+    color: white;
+    position: relative;
+    left: 0px;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 16px;
+}
+.check-item .beefup__head::after{
+    width: 15px;
+    height: 15px;
+    border-width: 0!important;
+    background-image: url(../report_css/images/open.svg);
+    background-size: cover;
+    transform: translate(0, -50%) rotate(0deg)!important;
+    margin-top: 0!important;
+    z-index: 1!important;
+}
+.check-item.beefup.is-open > .beefup__head::after {
+    background-image: url(../report_css/images/close.svg);
+}
+.check-item ul{
+    list-style: none;
+    padding-left: 0;
+}
+.check-item ul li {
+    border-bottom: 1px dotted rgba(0,0,0,.15);
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.check-item ul li:last-child{
+    border-bottom: none;
+}
+.check-item ul li strong{
+    color: rgb(0,149,130);
+    padding-right: 20px;
+    background-image: url(../report_css/images/arrow.svg);
+    background-position: right  4px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+#preloader {/*   這是整個會蓋住畫面的底色色塊  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #fff;
+    z-index: 9999;
+  }
+#status {/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+#status img{
+    width: 100px;
+    height: 100px;
+}
+
+.btn-primary {
+    background-color: rgb(0,149,130);
+    border-color: rgb(0,149,130);
+}
+.btn-primary:hover {
+    background-color: #007667;
+    border-color: #007667;
+}
+.btn-outline-primary {
+    color: rgb(0,149,130);
+    border-color: rgb(0,149,130);
+}
+.btn-outline-primary:hover {
+    background-color: rgb(0,149,130);
+    border-color: rgb(0,149,130);
+}
+
+.scroll-box{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.icon{
+    display: inline-block;
+    background-color: #EABF6F;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0 2px;
+    margin-top: -2px;
+}
+.icon i{
+    transform:scale (0.6);
+    -webkit-transform:scale(0.6);
+    -moz-transform:scale(0.6);
+    margin-left: -1px;
+}
+
+.width-set{position: relative;}

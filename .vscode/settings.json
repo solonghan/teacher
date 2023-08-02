@@ -1,0 +1,6 @@
+{
+	"intelephense.environment.phpVersion": "8.1.5",
+	"php.version": "8.1.5",
+	"php.suggest.basic": true,
+	"php.validate.executablePath": "/Applications/XAMPP/xamppfiles/bin/php-8.1.5"
+}
